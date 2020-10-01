@@ -7,23 +7,12 @@ const links = [
 
 export default function Nav() {
   return (
-    <nav>
-      <ul className="flex justify-between items-center p-8">
-        <li>
-          <Link href="/">
-            <a className="text-blue-500 no-underline">Home</a>
-          </Link>
-        </li>
-        <ul className="flex justify-between items-center space-x-4">
-          {links.map(({ href, label }) => (
-            <li key={`${href}${label}`}>
-              <a href={href} className="btn-blue no-underline">
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </ul>
-    </nav>
+    <div className="flex justify-between bg-purple-500 border-b-4 border-gray-900">
+      <div className="flex w-64">
+        <div className="w-full p-6 font-bold text-center text-gray-300 hover:bg-purple-400">KEDUWEB</div>
+        <div className="w-full p-6 font-bold text-center text-gray-300 hover:bg-purple-400">SITES</div>
+      </div>
+      
+    </div>
   )
 }
